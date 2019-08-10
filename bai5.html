@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Bài 5: Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.
+
+ -->
+    <script>
+        let a = "abv";
+        let b = "abv";
+    //  truong hop 1: Kiem tra 2 chuoi co bang nhau khong:
+        let result1 = (a == b) ? "2 chuoi giong nhau" : "2 chuoi khac nhau";
+    //  truong hop 2:  2 tu co cung nghia nhung cach viet hoa,thuong:
+        let  c = "Abc";
+        let  d = "abc";
+        c = c.toLowerCase();
+        d = d.toLowerCase();
+        let result2 = (c ==d ) ? "2 chuoi giong nhau" : "2 chuoi khac nhau";
+    //  truong hop 3: la so
+        let m = 3;
+        let n = "3";
+        if(Number.isNaN(m)==Number.isNaN(n))
+        
+        {
+            console.log("2 chuoi giong nhau");
+        }
+        else
+        {
+            console.log("2 chuoi khac nhau");
+        }
+        //  truong hop 4:
+        let x = " hello";
+        let y = "hello";
+        
+        x = x.trim().split("");
+        y = y.trim().split("");
+
+        let i = 0;
+        let count = true;
+        while( i != x.length)
+        {
+            if(x[i] != y[i])
+            {   
+                count  = false;
+                break;
+            }
+            i++;
+            
+
+        }
+        if(count)
+        {
+            console.log("2 chuoi bang nhau");
+        }
+        else
+        {
+            console.log("2 chuoi khac nhau");
+        }
+        
+        //  truong hop 5: co khoang trang.
+
+
+        
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // Bài 4: Viết một chương trình để đếm số từ trong một chuỗi
+        let  output = "Hello world! vn ".split(''); // bien string thanh 1 mang cac ki tu.
+        let count = 0;
+        let i = 0;
+        console.log(output);
+        //  xac dinh xem phan tu dau co khoang cach hay ko:
+        while ( output[i] == " ")
+        {
+            i++; 
+        }
+
+        let length = output.length - 1;
+        // bat dau tinh tu thu 2:
+        for(let j = i ; j < length ;j++)
+        {
+            if(output[j] ==" " && output[j+1] !=" ")
+            {
+                count++;
+            }
+        }
+        console.log(count+1);
+       
+
+
+
+
+    </script>
+</body>
+
+</html>
